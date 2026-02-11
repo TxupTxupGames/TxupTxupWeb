@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Txup Txup Games - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Txup Txup Games</h1>
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+</header>
+
+<nav id="navbar">
+    <a href="index.html">Inicio</a>
+    <a href="videojuegos.html">Videojuegos</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
+
+<main>
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Txup Txup Games es un estudio independiente de videojuegos, creadores de la saga Super Urtzi Bros y otros minijuegos originales. Nuestro objetivo es crear experiencias únicas y divertidas, combinando aventuras clásicas con creatividad moderna.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; Txup Txup Games since 2021. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    // Menu toggle
+    const menuToggle = document.getElementById('mobile-menu');
+    const navbar = document.getElementById('navbar');
+
+    menuToggle.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>

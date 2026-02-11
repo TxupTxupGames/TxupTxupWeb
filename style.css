@@ -1,0 +1,136 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0b0b0f; /* Negro oscuro */
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #8b00ff, #1e90ff); /* Magenta a azul */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    border-bottom: 3px solid #ff00ff;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2.5em;
+}
+
+/* Menu hamburguesa */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    cursor: pointer;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #1a1a1a;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff00ff;
+}
+
+/* Secciones y cards */
+.game-card {
+    position: relative;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #1f1f2f; /* negro azulado */
+    transition: transform 0.3s;
+    max-width: 800px;
+}
+
+.game-card:hover {
+    transform: scale(1.02);
+}
+
+.game-img {
+    width: 100%;
+    display: block;
+    border-bottom: 2px solid #ff00ff;
+    border-radius: 10px 10px 0 0;
+}
+
+.game-info {
+    padding: 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.game-card:hover .game-info {
+    max-height: 1000px; /* suficiente para toda la descripción */
+}
+
+.game-info h3 {
+    color: #ff00ff;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #1e90ff; /* azul */
+    color: #fff;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #8b00ff; /* magenta */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #121212;
+    border-top: 3px solid #ff00ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        display: none;
+    }
+    nav.active {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .game-img {
+        width: 100%;
+    }
+}

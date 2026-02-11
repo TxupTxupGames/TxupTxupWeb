@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Txup Txup Games - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Txup Txup Games</h1>
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+</header>
+
+<nav id="navbar">
+    <a href="index.html">Inicio</a>
+    <a href="videojuegos.html">Videojuegos</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
+
+<main>
+    <section id="bienvenida" class="game-card">
+        <h2>Bienvenido a Txup Txup Games</h2>
+        <p class="game-info">Somos los creadores de la saga <strong>Super Urtzi Bros</strong>. Explora nuestros juegos y minijuegos originales, con aventuras épicas, desafíos de plataforma y minijuegos únicos.</p>
+        <a href="videojuegos.html" class="button">Ver Videojuegos</a>
+    </section>
+
+    <section id="destacados">
+        <h2>Juegos Destacados</h2>
+
+        <div class="game-card">
+            <img src="images/sub1.jpg" alt="Super Urtzi Bros 1" class="game-img">
+            <div class="game-info">
+                <h3>Super Urtzi Bros 1</h3>
+                <p>Controla a Urtzi y derrota a Ibon y sus secuaces para rescatar a la princesa Teresa. Enfrenta Mini Ibon y Miren, y derrota al hijo de Ibon, Koldo, en su palacio.</p>
+                <a href="games/sub1.html" class="button">Jugar SUB1</a>
+            </div>
+        </div>
+
+        <div class="game-card">
+            <img src="images/boskos_mansion.jpg" alt="Boskos Mansion" class="game-img">
+            <div class="game-info">
+                <h3>Boskos Mansion</h3>
+                <p>Juego completo donde controlas a Bosko limpiando la mansión de fantasmas. Usa la aspiradora y el sensor para capturarlos. Estrategia, exploración y acción combinadas en cada habitación.</p>
+                <a href="games/boskos_mansion.html" class="button">Jugar Boskos Mansion</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; Txup Txup Games since 2021. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    // Menu toggle
+    const menuToggle = document.getElementById('mobile-menu');
+    const navbar = document.getElementById('navbar');
+
+    menuToggle.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>

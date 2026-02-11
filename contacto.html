@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Txup Txup Games - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Txup Txup Games</h1>
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+</header>
+
+<nav id="navbar">
+    <a href="index.html">Inicio</a>
+    <a href="videojuegos.html">Videojuegos</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
+
+<main>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes escribirnos a: <a href="mailto:txuptxupgames@gmail.com">txuptxupgames@gmail.com</a></p>
+        <p>Síguenos en nuestras redes sociales para estar al tanto de nuevos juegos y actualizaciones.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; Txup Txup Games since 2021. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    // Menu toggle
+    const menuToggle = document.getElementById('mobile-menu');
+    const navbar = document.getElementById('navbar');
+
+    menuToggle.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
